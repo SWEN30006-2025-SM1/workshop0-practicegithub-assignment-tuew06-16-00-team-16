@@ -1,25 +1,23 @@
 package example;
 
-//commend
-
 public class Calculator {
+
     public int add(int a, int b) {
-        // TODO: Implement this method
-        return 4;
+        return a + b;  // Correct addition
     }
 
     public int minus(int a, int b) {
-        // TODO: Implement this method
-        return 10;
+        return a - b;  // Correct subtraction
     }
 
     public int multiply(int a, int b) {
-        // TODO: Implement this method
-        return 10;
+        return a * b;  // Correct multiplication
     }
 
     public double divide(int a, int b) {
-        // TODO: Implement this method
-        return 5;
+        if (b == 0) {
+            throw new ArithmeticException("Division by zero is not allowed");
+        }
+        return (double) a / b;  // Correct division
     }
 }
